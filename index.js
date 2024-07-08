@@ -4,7 +4,7 @@ const fetch = require('node-fetch');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const apiKey = 'AIzaSyBfsNcJJHd-O0ftUzH2KqIRc_KhXgPXne0'; // Replace with your actual YouTube API key
+const apiKey = 'AIzaSyAuncZ6zOgCiTErzcEc3cHGuhybV1UIJvA'; // Replace with your actual YouTube API key
 
 app.get('/', async (req, res) => {
     if (req.query.name && req.query.name.trim() !== '') {
@@ -22,7 +22,7 @@ app.get('/', async (req, res) => {
                     const artist = item.snippet.channelTitle;
                     const thumbnailUrl = `https://i.ytimg.com/vi/${videoId}/mqdefault.jpg`;
                     const downloadUrl = `https://vivekfy.fanclub.rocks?url=https://www.youtube.com/watch?v=${videoId}`;
-                    const developerName = "Vivek❤️Masona";
+                    const developerName = "Vivek Masona";
 
                     return {
                         title,
