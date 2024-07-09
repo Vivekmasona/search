@@ -9,7 +9,7 @@ const apiKey = 'AIzaSyAuncZ6zOgCiTErzcEc3cHGuhybV1UIJvA'; // Replace with your a
 app.get('/', async (req, res) => {
     if (req.query.name && req.query.name.trim() !== '') {
         const query = encodeURIComponent(req.query.name.trim());
-        const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${query}&key=${apiKey}`;
+        const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=4&q=${query}&key=${apiKey}`;
 
         try {
             const response = await fetch(url);
